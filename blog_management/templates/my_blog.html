@@ -1,0 +1,17 @@
+{% extends "user_home.html" %} {% load static%} 
+{% block title %} My Blogs 
+{% endblock %} 
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/my_blog.css' %}" />{% endblock %}
+{% block content %}
+<div class="blog-grid" id="blogGrid"></div>
+
+<div class="pagination-container">
+  <button id="prevBtn">Prev</button>
+  <span id="pageInfo"></span>
+  <button id="nextBtn">Next</button>
+</div>  
+ {% endblock %}
+ {% block script %}
+<script src="{% static 'js/my_blog.js' %}"></script>
+{% endblock %}

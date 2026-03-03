@@ -1,0 +1,55 @@
+{% extends "user_home.html" %}
+{% load static%}
+{% block title %}
+Create Blog
+{% endblock %}
+{% block style %} <link rel="stylesheet" href="{% static '/css/create_blog.css' %}">{% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+
+            <div class="card shadow">
+                <div class="card-body">
+
+                    <h3 class="card-title mb-4 text-center">Create New Blog</h3>
+
+                    <!-- Alert Box -->
+                    <div id="alertBox"></div>
+
+                    <form id="blogForm" enctype="multipart/form-data">
+
+                        <!-- Blog Title -->
+                        <div class="mb-3">
+                            <label class="form-label">Blog Title</label>
+                            <input type="text" class="form-control" id="blogTitle" required>
+                        </div>
+
+                        <!-- Blog Thumbnail -->
+                        <div class="mb-3">
+                            <label class="form-label">Blog Thumbnail</label>
+                            <input type="file" class="form-control" id="blogThumbnail" accept="image/*">
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="mb-3">
+                            <label class="form-label">Blog Content</label>
+                            <textarea class="form-control" id="blogContent" rows="6" required></textarea>
+                        </div>
+
+                        <!-- Post Button -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Post Blog</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block script %} <script src="{% static '/js/create_blog.js' %}"></script> {% endblock %}

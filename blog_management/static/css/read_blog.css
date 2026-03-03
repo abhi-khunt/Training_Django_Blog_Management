@@ -1,0 +1,48 @@
+.blog-container{
+
+    max-width:800px;
+    margin:auto;
+
+}
+
+#blogTitle{
+
+    font-size:32px;
+    font-weight:600;
+    margin-bottom:20px;
+
+}
+
+/* Thumbnail Container */
+
+.thumbnail-box{
+
+    width:100%;
+    text-align:center;
+    margin-bottom:25px;
+
+}
+
+
+/* Fixed Thumbnail Size */
+
+#blogThumbnail{
+
+    width:600px;        /* Fixed Width */
+    height:350px;       /* Fixed Height */
+
+    object-fit:cover;   /* Prevent distortion */
+
+    border-radius:10px;
+
+}
+
+
+/* Blog Content */
+
+.blog-content{
+
+    font-size:18px;
+    line-height:1.7;
+
+}

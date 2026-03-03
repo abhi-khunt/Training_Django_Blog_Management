@@ -1,0 +1,51 @@
+
+.profile-box{
+
+    max-width:500px;
+    margin:auto;
+
+    padding:25px;
+
+    background:white;
+
+    border-radius:12px;
+
+    box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+
+}
+
+
+/* Profile Image Area */
+
+.profile-image-box{
+
+    text-align:center;
+    margin-bottom:25px;
+
+}
+
+
+/* Circular Profile Picture */
+
+#profilePreview{
+
+    width:150px;
+    height:150px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid #ddd;
+
+    margin-bottom:10px;
+
+}
+
+
+#profilePicture{
+
+    display:block;
+    margin:auto;
+
+}

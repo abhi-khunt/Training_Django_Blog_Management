@@ -1,0 +1,98 @@
+{% extends "user_home.html" %}
+{% load static %}
+
+{% block title %}
+Profile
+{% endblock %}
+
+
+{% block style %}
+<link rel="stylesheet" href="{% static '/css/profile.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <div class="profile-box">
+
+        <h3 class="text-center mb-4">
+            My Profile
+        </h3>
+
+        <div id="alertBox"></div>
+
+        <form id="profileForm"
+              enctype="multipart/form-data">
+
+            <!-- Profile Picture -->
+
+            <div class="profile-image-box">
+
+                <img id="profilePreview"
+                     src="/media/profile/default.png">
+
+                <input type="file"
+                       id="profilePicture"
+                       accept="image/*">
+
+            </div>
+
+
+            <!-- First Name -->
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    First Name
+                </label>
+
+                <input type="text"
+                       id="firstName"
+                       class="form-control">
+
+            </div>
+
+
+            <!-- Last Name -->
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Last Name
+                </label>
+
+                <input type="text"
+                       id="lastName"
+                       class="form-control">
+
+            </div>
+
+
+            <!-- Save Button -->
+
+            <div class="d-grid">
+
+                <button class="btn btn-success"
+                        type="submit">
+
+                    Save Profile
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
+
+
+{% block script %}
+<script src="{% static '/js/profile.js' %}"></script>
+{% endblock %}

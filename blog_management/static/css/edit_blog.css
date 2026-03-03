@@ -1,0 +1,13 @@
+.card {
+    border-radius: 12px;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.preview-image{
+    max-height:200px;
+    border-radius:8px;
+    display:block;
+}

@@ -1,0 +1,40 @@
+{% extends layout %}
+{% load static %}
+
+{% block title %}
+View Blog
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static '/css/read_blog.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <div class="blog-container">
+
+        <h1 id="blogTitle"></h1>
+
+        <div class="thumbnail-box">
+            <img id="blogThumbnail">
+        </div>
+
+        <div class="blog-content" id="blogContent">
+        </div>
+
+    </div>
+
+</div>
+
+<input type="hidden" id="blogId" value="{{ blog_id }}">
+
+
+{% endblock %}
+
+
+{% block script %}
+<script src="{% static '/js/read_blog.js' %}"></script>
+{% endblock %}

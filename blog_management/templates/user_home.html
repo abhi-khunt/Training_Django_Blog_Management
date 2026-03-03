@@ -1,0 +1,35 @@
+{% extends "dashboard_layout.html" %} 
+{% load static%}
+
+{% block title %} Home {% endblock %} 
+{% block style %}<link rel="stylesheet" href="{% static 'css/dashboard_blogs.css' %}">{% endblock %}
+{% block navitem %}
+<li class="nav-item" id="createBlogNav">
+  <a class="nav-link nav-btn" href="/create-blog/">Create Blog</a>
+</li>
+
+<li class="nav-item" id="myBlogNav">
+  <a class="nav-link nav-btn" href="/my-blog/">My Blog</a>
+</li>
+
+<li class="nav-item" id="profileNav">
+  <a class="nav-link nav-btn" href="/profile/">Profile</a>
+</li>
+
+<li class="nav-item" id="logoutNav">
+  <a class="nav-link nav-btn" href="/logout/" id="logoutBtn">Logout</a>
+</li>
+
+{% endblock %} 
+{% block content %}
+<div class="blog-grid" id="blogGrid">
+  <!-- Blogs will be inserted here -->
+</div>
+
+<div class="pagination-container">
+  <button id="prevBtn">Prev</button>
+  <span id="pageInfo"></span>
+  <button id="nextBtn">Next</button>
+</div>
+<script src="{% static 'js/dashboard_blogs.js' %}"></script>
+{% endblock %}
